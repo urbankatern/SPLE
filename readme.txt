@@ -87,3 +87,43 @@
 
 30. Kateri element definira naslovno celico v tabeli (privzeto krepka in sredinsko poravnana pisava)?
     <th>
+
+31. Kaksna je razlika med elementoma "<b>" in "<strong>"
+    <b> je zgolj vizualno krepko (brez dodatnega pomena). <strong> pomeni, da je vsebina semanticno pomembna, zato jo bralniki zaslona lahko poudarijo. Brskalnik obe prikaze krepko.
+
+32. Kaksna je razlika med elementoma "<i>" in "<em>"
+    <i> je posevno besedilo brez poudarka (tuje besede, strokovni izrazi, misli). <em> pomeni poudarek v pomenu (emphasis), ki spremeni naglas stavka in ga prepoznajo bralniki zaslona.
+
+33. Pojasni delovanje in namen elementov "<sub>" in "<sup>" ter navedi primer za vsakega.
+    <sub> prikaze besedilo kot podpisano (spodaj), <sup> pa kot nadpisano (zgoraj): H2O in x^2
+
+34. Kako z elementom "<a>" odpremo povezavo v novem zavihku in kateri zascitni atribut moramo ob tem dodati?
+    Z atributom target="_blank" (nov zavihek), ob tem pa dodamo rel="noopener noreferrer" (zascitni atribut).
+        <a href="https://www.vegova.si" target="_blank" rel="noopener noreferrer">Vegova</a>
+
+35. Kaj je sidrna povezava (zaznamek / *bookmark*) in kako jo vzpostavimo v kodi?
+    Povezava na dolocen del iste ali druge strani. Cilju dodamo id povezavi pa href="#id".
+        <a href="#kontakt">Pojdi na kontakt</a>
+        ...
+        <h2 id="kontakt">Kontakt</h2>
+
+36. Napisi kodo za povezavo, ki ob kliku odpre privzeti e-postni program z naslovom 'tajnistvo@vegova.si'.
+    <a href="mailto:tajnistvo@vegova.si">Pisite nam</a>
+
+37. Napisi kodo za povezavo, ki na mobilni napravi omogoca neposreden klic na neko telefonsko stevilko, npr. "+38612345678".
+    <a href="tel:+38612345678">Poklicite nas</a>
+
+38. Opisi strukturo in namen opisnega seznama "<dl>". Iz katerih pod gradnikov je sestavljen?
+    Uporablja se za pare izraz-opis (slovar). Sestavljen je iz:
+    * <dt> - izraz (definition term)
+    * <dd> - opis (definition description)
+        <dl>
+            <dt>HTML</dt>
+            <dd>Program za izdelavo spletnih strani</dd>
+        </dl>
+
+39. Zakaj je priporocljivo pri elementu "<img>" vedno eksplicitno navesti atributa "width" in "height"?
+    Brskalnik tako vnaprej rezervira prostor za sliko, zato se vsebina med nalaganjem ne premika.
+
+40. Kaj stori atribut /loading="lazy"/ pri sliki in zakaj izboljsa delovanje spletisca?
+    Brskalnik nalozi sliko sele, ko se pribliza vidnemu obmocju. Tako zmanjsa zacetno kolicino prenesenih podatkov in pospesi nalaganje strani.
