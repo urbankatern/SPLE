@@ -127,3 +127,42 @@
 
 40. Kaj stori atribut /loading="lazy"/ pri sliki in zakaj izboljsa delovanje spletisca?
     Brskalnik nalozi sliko sele, ko se pribliza vidnemu obmocju. Tako zmanjsa zacetno kolicino prenesenih podatkov in pospesi nalaganje strani.
+
+41. Kako v tabeli vertikalno zdruzimo tri sosednje celice v isti vrstici? Navedi primer znacke.
+    Z atributom colspan:
+        <td colspan="3">Zdruzena celica</td>
+
+42. Kako v tabeli vertikalno zdruzimo celico skozi dve vrstici? Navedi primer znacke.
+    Z atributom rowspan:
+        <td rowspan="3">Zdruzena celica</td>
+
+43. Katere tri strukturne sklope tabele poznamo in kaksen je njihov pomen za dostopnost?
+    * <thead> - naslovi stolpcev
+    * <tbody> - podatki
+    * <tfoot> - povzetki
+
+44. Cemu sluzi atribut "scope" pri celici "<th>" in kateri dve vrednosti najpogosteje zavzame?
+    Doloca, ali <th> celica sluzi kot glava za stolpec, vrstico oz. skupino stolpcev, vrstic. Najpogostejsi vrednosti sta col in row
+
+45. Kako element "<label>" pravilno povezemo z vnosnim poljem "<input>"? Napisi primer.
+    Z atributoma for in id.
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime">
+
+46. Zakaj atribut "placeholder" v obrazcih ne more nadomestiti elementa "<label>"?
+    Ker izgine, ko uporabnik zacne tipkati, ima slab kontrast, ni zanesljivo prebran z bralniki zaslona in ne povecuje klikalnega obmocja polja.
+
+47. Kako zagotovimo, da lahko uporabnik v skupini izbirnih gumbov /type="radio"/ izbere natanko eno moznost.
+    Vsi gumbi v skupini morajo imeti enak atribut name, vsak pa drugacen value.
+
+48. Kaksna je vloga elementov "<fieldset>" in "<legend>" v spletnih obrazcih?
+    <fieldset> zdruzuje sorodna polja obrazca v skupino, <legend> pa ji doda naslov (opis). Izboljsa preglednost in dostopnost, saj bralnik zaslona ob vsakem polju pove tudi naslov skupine.
+
+49. Napisi kodo za spustni meni "<select>", ki vsebuje dve moznosti: "Vegova" in "Druga sola".
+    <select name="sola">
+        <option value="vegova">Vegova</option>
+        <option value="druga">Druga sola</option>
+    </select>
+
+50. Kaj omogoca element "<datalist>" v kombinaciji z elementom "<input>"?
+    Ponudi seznam predlogov za <input> (samodejno dopolnjevanje), uporabnik pa lahko vpise tudi poljubno vrednost. Povezava poteka prek list in id.
