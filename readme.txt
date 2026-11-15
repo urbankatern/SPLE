@@ -58,7 +58,7 @@
 20. Kateri element predstavlja posamezno postavko znotraj poljubnega seznama?
     <li>
 
-21. Kaj je znacilnost blokovnih "block-level" elementov glede na preloma in sirine?
+21. Kaj je znacilnost blokovnih "block-level" elementov glede preloma in sirine?
     Zacnejo se v novi vrstici in privzeto zavzamejo celotno razpolozljivo sirino nadrejenega elementa. Sirino in visino jim lahko nastavimo.
 
 22. Kaj je znacilnost vrsticnih "inline" elementov glede preloma in sirine?
